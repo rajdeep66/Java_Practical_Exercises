@@ -1,0 +1,10 @@
+package pe3;
+
+public class LetterCheaker {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
