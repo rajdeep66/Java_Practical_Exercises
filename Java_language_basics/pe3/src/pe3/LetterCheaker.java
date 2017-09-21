@@ -17,16 +17,19 @@ Scanner ne=new Scanner(System.in);
 	
 		
 		System.out.println("You entered word is  "+input);
-		if(input instanceof String){
-            System.out.println("its a string");
-		}
-//		try {
-//			int midterm = Integer.parseInt((input).toString());
-//		}
-//		catch(Exception e){
-//			System.out.println("it is not a integer");
-//		}
-//		
 
+		for(int i=0;i<input.length();i++) {
+			if("01234567890".indexOf(input.charAt(i)) >=0) {
+				System.err.println("Alpha numeric word.");
+				System.exit(1);
+			}
+			if("aeiou".indexOf(
+					input.charAt(i)) >= 0) {
+				System.out.print("Vowel ");
+			}
+			else {
+				System.out.print("Consonent ");
+			}
+		}
 	}
 }
