@@ -4,14 +4,14 @@ public class palindrom {
 	
 	
 	public static void CheckNumber(int a) {
-		  int r,sum=0;
+		  int result,sum=0;
 		  int sum1=0;
 		  int temp=a;    
 		  while(a>0){    
-		   r=a%10;  
+		   result=a%10;
 		   
-		   if(r%2==0)sum1=sum1+r;
-		   sum=(sum*10)+r;    
+		   if(result%2==0)sum1=sum1+result;
+		   sum=(sum*10)+result;
 		   a=a/10;    
 		  }    
 		  if(temp==sum)    
